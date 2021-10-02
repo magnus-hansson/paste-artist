@@ -4,8 +4,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 require('dotenv').config()
-//Qs3GoYdhJ47r6o9Z garage
-//cluster0.rp737.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
 const uri = process.env.DB
 
 const Document = require('./models/Document')
